@@ -8,18 +8,12 @@ The non-linear dynamics track a state vector defined as $x = [x, \dot{x}, \theta
 
 | Parameter | Value | Unit |
 | --- | --- | --- |
-| **Cart Mass (M)** | 1.0 | kg
-
- |
-| **Pole Mass (m)** | 0.1 | kg
-
- |
-| **Pole Length (l)** | 0.5 | m
-
- |
+| **Cart Mass (M)** | 1.0 | kg|
+| **Pole Mass (m)** | 0.1 | kg|
+| **Pole Length (l)** | 0.5 | m|
 | **Gravity (g)** | 9.81 | m/s²
 
- |
+
 
 To enable linear control, `LQR.py` employs a numerical method to linearize the system around its upright equilibrium state, yielding the continuous-time state-space matrices $A$ and $B$.
 
@@ -43,7 +37,7 @@ $$J = \int_{0}^{\infty} (x^T Q x + u^T R u) dt$$
 
 * **Actuation:** The controller calculates a restoring force $F = -K(x - x_{target})$, clipped between -10 and 10 to simulate real-world motor limits.
 
-
+ 
 
 ---
 
